@@ -59,7 +59,12 @@ const promptUser = () => {return inquirer.prompt(questions)};
 function writeToFile(fileName, data) {}
 
 // Function to initialize app
-function init() {}
+const init = async () => {
+    const answers = await promptUser();
+    const html = writeToFile(answers);
+
+    await writeFileAsync('index.js',html);
+}
 
 // Function call to initialize app
 init();
