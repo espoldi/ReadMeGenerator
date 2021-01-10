@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create an array of questions for user input
+// An array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -53,10 +53,12 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
+const promptUser = () => {return inquirer.prompt(questions)};
+
+// Function to write README file
 function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {}
 
 // Function call to initialize app
