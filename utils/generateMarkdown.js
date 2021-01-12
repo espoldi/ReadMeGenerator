@@ -26,7 +26,7 @@ ${data.description}
 
 
 ## Installation
-  ${data.installation}
+    ${data.installation}
 
 ## Usage
 ${data.usage}
@@ -42,8 +42,10 @@ ${data.tests}
 
 ## Questions
 Contact Me at
-  Github: https://github.com/${data.user}
-  Email: ${data.email}
+
+Github: https://www.github.com/${data.user}
+
+Email: ${data.email}
 `;
 }
 
