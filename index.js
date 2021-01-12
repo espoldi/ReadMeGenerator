@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
+const generateMarkdown = require('./utils/generateMarkdown');
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // An array of questions for user input
@@ -56,14 +57,16 @@ const questions = [
 const promptUser = () => {return inquirer.prompt(questions)};
 
 // Function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    writeFileAsync(fileName, data);
+    console.log("test successful");
+}
 
 // Function to initialize app
 const init = async () => {
     const answers = await promptUser();
-    const html = writeToFile(answers);
-
-    await writeFileAsync('index.js',html);
+    const markdown = await generateMarkdown(answers);
+    const html = writeToFile('README.md', markdown);
 }
 
 // Function call to initialize app

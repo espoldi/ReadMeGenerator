@@ -42,8 +42,8 @@ ${data.tests}
 
 ## Questions
 Contact Me at
-  ${data.user}
-  ${data.email}
+  Github: https://github.com/${data.user}
+  Email: ${data.email}
 `;
 }
 
