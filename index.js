@@ -28,9 +28,18 @@ const questions = [
         message: 'What is this project meant to be used for?',
     },
     {
-        type: 'input',
+        type: 'rawlist',
         name: 'license',
         message: 'Which license applies?',
+        choices: [
+            'MIT', 
+            'Mozilla Public License 2.0', 
+            'Apache License 2.0', 
+            'Boost License 1.0', 
+            'Eclipse Public License 1.0', 
+            'Creative Commons', 
+            'Unlicense', 
+            'none'],
     },
     {
         type: 'input',
