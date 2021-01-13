@@ -60,7 +60,7 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  return `This project is protected under ${data.license}.`;
+  return `This project is protected under ${license}.`;
 }
 
 // Function to generate markdown for README
@@ -75,7 +75,7 @@ function generateMarkdown(data) {
 * [Description](#Description)
 * [Installation](#Installation)
 * [Usage](#Usage)
-* [License](#License) [![License](${badge})](${link})
+* [License](#License) [![badge](${badge})](${link})
 * [Contributing](#Contributing)
 * [Tests](#Tests)
 * [Questions](#Questions)

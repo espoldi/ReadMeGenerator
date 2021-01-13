@@ -32,7 +32,7 @@ const questions = [
         name: 'license',
         message: 'Which license applies?',
         choices: [
-            'MIT', 
+            'MIT License', 
             'Mozilla Public License 2.0', 
             'Apache License 2.0', 
             'Boost License 1.0', 
